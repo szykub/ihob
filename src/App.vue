@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Title />
+    <About />
+    <Mission />
+    <Information />
+    <Innovation />
+    <HowItWorks />
+    <Partners />
+    <Union />
+    <Movies />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Title from './components/Title';
+import Header from './components/Header';
+import About from './components/About';
+import Mission from './components/Mission';
+import Information from './components/Information';
+import Innovation from './components/Innovation';
+import HowItWorks from './components/HowItWorks';
+import Partners from './components/Partners';
+import Union from './components/Union';
+import Movies from './components/Movies';
+import Footer from './components/Footer';
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  }
+  components: {Movies,Footer, Union, Partners, Innovation, Information, Mission, Title, Header, About, HowItWorks },
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    background: none;
+    font-weight: inherit;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Poppins;
+  }
 </style>
